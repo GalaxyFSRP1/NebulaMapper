@@ -1,0 +1,8 @@
+{
+  "hf_repo": "PhantomVoidTTV/NebulaMapper",
+  "hf_branch": "main",
+  "fallback_repo": "cata121/bsgen-1.0",
+  "auto_push_to_hf": true,
+  "prefer_hub_over_local": true,
+  "mapper_author": "NebulaMapper (PhantomVoidTTV)"
+}

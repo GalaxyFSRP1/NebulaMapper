@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bsgen"
+version = "1.3.0"
+description = "NebulaMapper — PhantomVoid Neural BeatStudio: AI Beat Saber map generator, lightshow choreographer, 6-DoF VR Bot & Hugging Face Model Studio"
+readme = "README.md"
+license = "AGPL-3.0-only"
+requires-python = ">=3.10"
+dependencies = [
+    "gradio>=6.0",
+    "huggingface-hub>=0.25",
+    "librosa>=0.10",
+    "numpy>=1.24",
+    "pillow>=10.0",
+    "safetensors>=0.4",
+    "scipy>=1.10",
+    "soundfile>=0.12",
+    "torch>=2.2",
+    "yt-dlp",
+]
+
+[project.urls]
+Homepage = "https://github.com/GalaxyFSRP1/NebulaMapper"
+Models = "https://huggingface.co/PhantomVoidTTV/NebulaMapper"
+
+[tool.setuptools.packages.find]
+include = ["bsgen*"]
+
+[tool.setuptools.package-data]
+bsgen = ["_rules*.so", "_rules*.pyd", "assets/*.png"]
